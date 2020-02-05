@@ -135,6 +135,7 @@ body {
   height: 100%;
 }
 nav {
+  font-family: 'Roboto Condensed', sans-serif;
   background-color: #75716c;
   border: 2px solid #524c50;
   display: flex;
@@ -165,6 +166,9 @@ body {
   background-color: #6d6c75;
   color: lightgrey;
   border: 3px solid #74756c;
+}
+body .container {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 body .container .jeb {
   border-bottom: 2px dotted grey;
