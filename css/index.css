@@ -134,7 +134,59 @@ html,
 body {
   height: 100%;
 }
+nav {
+  background-color: #75716c;
+  border: 2px solid #524c50;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+}
 nav a {
   text-decoration: none;
-  color: grey;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+body {
+  background-color: #6d6c75;
+  color: lightgrey;
+  border: 3px solid #74756c;
+}
+body .container .jeb {
+  font-size: 1.5rem;
+  background-color: #756c74;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4rem;
+}
+body .container .jeb h1 {
+  font-size: 3rem;
+  margin-bottom: -6rem;
+}
+body .container .jeb .aboutme {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+body .intro {
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+body .intro p {
+  margin-top: 1rem;
+  text-align: center;
+}
+body .skills {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+body .skills li {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
