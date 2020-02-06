@@ -250,8 +250,12 @@ body .projects button {
   }
 }
 body .work h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-bottom: 2rem;
+}
+body .work h4 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 body .work .farm {
   display: flex;
@@ -286,7 +290,8 @@ body .work .details {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  border-top: 2px solid lightcyan;
+  border: 2px solid lightcyan;
+  background-color: #524c50;
 }
 body .work .details p {
   margin-top: 0.5rem;
