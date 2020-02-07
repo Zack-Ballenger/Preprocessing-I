@@ -1,1 +1,342 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+nav {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #75716c;
+  border: 2px solid #524c50;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  nav a {
+    border-bottom: 2px solid grey;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+body {
+  background-color: #6d6c75;
+  color: lightgrey;
+  border: 3px solid #74756c;
+}
+body .container {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body .container .jeb {
+  border-bottom: 2px dotted grey;
+  font-size: 1.5rem;
+  background-color: #756c74;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4rem;
+}
+body .container .jeb h1 {
+  font-size: 3rem;
+  margin-bottom: -6rem;
+}
+body .container .jeb .aboutme {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 3rem;
+  border-bottom: 2px solid white;
+}
+@media (max-width: 500px) {
+  body .container .jeb img {
+    display: none;
+  }
+  body .container .jeb h1 {
+    margin-bottom: 2rem;
+  }
+  body .container .jeb .aboutme p {
+    margin-bottom: 2rem;
+  }
+}
+body .intro {
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+body .intro p {
+  margin-top: 1rem;
+  text-align: center;
+}
+body .skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+body .skills li {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+body .projects {
+  display: flex;
+}
+body .projects .site {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+  margin: 2rem;
+  border: 2px solid #524c50;
+  width: 20rem;
+  border-bottom: 2px solid grey;
+  margin-bottom: 1rem;
+}
+body .projects button {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  body .projects {
+    display: none;
+  }
+}
+body .work h3 {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+body .work h4 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+body .work .farm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.5rem;
+  border-top: 2px solid grey;
+  margin-bottom: 1.5rem;
+}
+body .work .freelance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.5rem;
+  border-top: 2px solid grey;
+  margin-bottom: 1.5rem;
+}
+body .work .barn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.5rem;
+  border-top: 2px solid grey;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+body .work .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid lightcyan;
+  background-color: #524c50;
+}
+body .work .details p {
+  margin-top: 0.5rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  body .work h3 {
+    text-align: center;
+  }
+  body .work p {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body h3 {
+  font-size: 2.5rem;
+}
+body input[type=text],
+body select,
+body textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+body input[type=submit] {
+  background-color: #524c50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body input[type=submit]:hover {
+  background-color: #45a049;
+}
+body .container-form {
+  border-radius: 5px;
+  background-color: lightgrey;
+  padding: 20px;
+}
